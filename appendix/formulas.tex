@@ -1,0 +1,1013 @@
+%\titlespacing{\subsubsection}{0pt}{0mm plus 1mm minus 1mm}{0pt plus 1mm minus 1mm}  
+%\titlespacing{\section}{0pt}{1mm plus 2mm minus 1mm}{1pt plus 2mm minus 1mm}  
+\renewcommand*{\arraystretch}{1.5}
+\everymath{\displaystyle}
+\normalsize
+	
+\part{Приложения}
+\chapter[Формулы к письменному ГОСу]{Формулы к письменному ГОСу\footnotemark}
+
+\footnotetext{Для компактности в данном разделе не указаны допустимые значения аргументов и параметров в большинстве случаев.}
+\section{Тригонометрические формулы}
+
+\subsubsection{Основные тригонометрические формулы}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.33\textwidth} p{0.33\textwidth} p{0.33\textwidth}}
+$\sin^2x+\cos^2x=1$
+&
+$\tg^2x+1=\frac{1}{\cos^2x}$
+&
+$\tg x\cdot\ctg x=1$
+\end{longtable}
+
+\subsubsection{Формула Эйлера и ее следствия}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.33\textwidth} p{0.33\textwidth} p{0.33\textwidth}}
+$e^{ix} = \cos x + i \sin x$
+&
+$\sin x = \frac{e^{ix}-e^{-ix}}{2i}$
+&
+$\cos x = \frac{e^{ix}+e^{-ix}}{2}$
+\end{longtable}
+
+\subsubsection{Формулы сложения и вычитания аргументов}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sin(x\pm y)=\sin x \cos y \pm \cos x \sin y$
+&
+$\tg(x\pm y)=\frac{\tg x \pm \tg y}{1 \mp \tg x\tg y}$
+\\
+$\cos(x\pm y)= \cos x \cos y \mp \sin x \sin y$
+&
+$\ctg(x\pm y)=\frac{\ctg x\ctg y \mp 1}{\ctg x \pm \ctg y}$
+\end{longtable}
+
+\subsubsection{Формулы двойного угла}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.33\textwidth} p{0.33\textwidth} p{0.33\textwidth}}
+$\sin 2x = 2\sin x \cos x$
+&
+$\cos 2x = \cos^2 x - \sin^2 x$
+&
+$\tg 2x = \frac{2\tg x}{1-\tg^2x}$
+\end{longtable}
+
+\subsubsection{Формулы понижения степени}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$2\sin^2x=1-\cos 2x$
+&
+$2\cos^2x=1+\cos 2x$
+\\
+$4\sin^3x=3\sin x-\sin 3x$
+&
+$4\cos^3x=3\cos x+\cos 3x$
+\end{longtable}
+
+\subsubsection{Формулы преобразования суммы}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sin x\pm \sin y =2 \sin \frac{x\pm y}{2} \cos \frac{x\mp y}{2}$
+&
+$\cos x + \cos y  = 2 \cos \frac{x + y}{2} \cos \frac{x - y}{2}$
+\\
+$\tg x \pm \tg y = \frac{\sin (x \pm y)}{ \cos x \cos y}$
+&
+$\cos x - \cos y  = -2 \sin \frac{x + y}{2} \sin\frac{x - y}{2}$
+\end{longtable}
+
+\subsubsection{Формулы преобразования произведения}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$2\sin x \sin y = \cos (x-y)-\cos(x+y)$ & $2\sin x \cos y = \sin (x-y)+\sin(x+y)$
+\\
+$2\cos x \cos y = \cos (x-y)+\cos(x+y)$
+\end{longtable}
+
+\subsubsection{Формулы приведения}
+\footnotesize
+\begin{longtable}{|c|c|c|c|c|c|c|c|c|}
+\hline
+& $\pi/2-x$ & $\pi/2+x$ & $\pi-x$ & $\pi+x$ & $3\pi/2-x$ & $3\pi/2+x$ & $2\pi-x$ & $2\pi+x$ \\\hline
+$\sin$ & $\cos x$ & $\cos x$ & $\sin x$ & $-\sin x$ & $-\cos x$ & $-\cos x$ & $-\sin x$ & $\sin x$ \\\hline
+$\cos$ & $\sin x$ & $-\sin x$ & $-\cos x$ & $-\cos x$ & $-\sin x$ & $\sin x$ & $\cos x$ & $\cos x$ \\\hline
+$\tg$ & $\ctg x$ & $-\ctg x$ & $-\tg x$ & $\tg x$ & $\ctg x$ & $-\ctg x$ & $-\tg x$ & $\tg x$ \\\hline
+$\ctg$ & $\tg x$ & $-\tg x$ & $-\ctg x$ & $\ctg x$ & $\tg x$ & $-\tg x$ & $-\ctg x$ & $\ctg x$
+\\\hline
+\end{longtable}
+\normalsize
+
+Алгоритм действий, который здесь работает:
+\begin{enumerate}
+\item
+Определите знак первоначальной функции в соответствующей четверти. Ставим этот знак перед новой функцией. Напомним знаки:
+\usepict[1]{forpict1}{0.09}
+\item
+\begin{itemize}
+\item 
+При $\pi/2$ и $3\pi/2$ функция меняется на кофункцию.
+\item
+При $\pi$ и $2\pi$ функция не меняется на кофункцию.
+\end{itemize}
+\end{enumerate}
+
+\section{Гиперболические функции}
+
+\subsubsection{Определение}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sh x = \frac{e^{x}-e^{-x}}{2}$
+&
+$\th x = \frac{\sh x}{\ch x}=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}=\frac{e^{2x}-1}{e^{2x}+1}$
+\\
+$\ch x = \frac{e^{x}+e^{-x}}{2}$
+&
+$\cth x = \frac{1}{\th x}$
+\end{longtable}
+
+\subsubsection{Важное соотношение}
+\begin{longtable}[c]{c}
+$\ch^2 x - \sh^2 x = 1;$
+\end{longtable}
+
+\subsubsection{Связь с тригонометрическими функциями}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.33\textwidth} p{0.33\textwidth} p{0.33\textwidth}}
+$\ch (ix) = \cos x$
+&
+$\sh (ix)= i \sin x$
+&
+$\th (ix) = i \tg x$
+\\
+$\cos (ix) = \ch x$
+&
+$\sin (ix) = i \sh x$
+&
+$\tg (ix) = i \th x$
+\end{longtable}
+
+\subsubsection{Формулы сложения и вычитания аргументов}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sh (x\pm y) =  \sh x \ch y \pm \sh y \ch x$
+&
+$\th (x \pm y) = \frac{\th x \pm \th y}{1 \pm \th x \th y}$
+\tabularnewline
+$\ch (x\pm y) =  \ch x \ch y \pm \sh y \sh x$
+&
+$\cth (x \pm y) = \frac{1 \pm \cth x \cth y}{\cth x \pm \cth y}$
+\end{longtable}
+
+\subsubsection{Формулы двойного угла}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sh 2x = 2\ch x\sh x$
+&
+$\th 2x = \frac{2\th x}{1 + \th^2 x}$
+\\
+$\ch 2x = \ch^2 x + \sh^2 x$
+&
+$\cth 2x = \frac{1}{2}(\th x + \cth x)$
+\end{longtable}
+
+\subsubsection{Формулы понижения степени}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$2\ch^2 x = \ch 2x + 1$
+&
+$2\sh^2 x = \ch 2x - 1$
+\\
+$4\sh^3 x = \sh 3x - 3 \sh x$
+&
+$4 \ch^3 x = \ch 3x + 3 \ch x$
+\end{longtable}
+
+\subsubsection{Формулы преобразования произведения}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sh x \sh y = \frac{\ch(x + y) - \ch (x - y)}{2}$
+&
+$\sh x \ch y = \frac{\sh(x + y) + \sh(x - y)}{2}$
+\\
+$\ch x \ch y = \frac{\ch(x + y) + \ch(x - y)}{2}$
+\end{longtable}
+
+\subsubsection{Формулы преобразования суммы}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\sh x \pm \sh y = 2 \sh\frac{x \pm y}{2} \ch\frac{x \mp y}{2}$
+&
+$\ch x + \ch y = 2 \ch\frac{x + y}{2}\ch\frac{x - y}{2}$
+\\
+$\th x \pm \th y = \frac{\sh(x \pm y)}{\ch x \ch y}$
+&
+$\ch x - \ch y = 2 \sh\frac{x + y}{2}\sh\frac{x - y}{2}$
+\end{longtable}
+
+\section{Обратные гиперболические функции}
+
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\arsh x = \ln(x + \sqrt{x^2 + 1})$
+&
+$\arth x = \frac{1}{2}\ln \left(\frac{1 + x}{1 - x} \right)$, $|x|<1$
+\\
+$\arch x = \ln(x + \sqrt{x^2 - 1})$, $x \ge 1$
+&
+$\arcth x = \frac{1}{2}\ln \left( \frac{x+ 1}{x - 1} \right)$, $|x|<1$
+\end{longtable}
+
+\section{Производные}
+
+\subsubsection{Правила взятия производной}
+\begin{longtable}[c]{@{\extracolsep{\fill}}|p{0.5\textwidth}|p{0.5\textwidth}|}
+$(u\pm v)'=u'\pm v'$ & $ $
+\\
+$(uv)'=uv'+u'v$ & $\frac{u}{v} = \frac{u'v-uv'}{v^2}$
+\end{longtable}
+
+\subsubsection{Формула Лейбница}
+\begin{longtable}[c]{@{\extracolsep{\fill}}l}
+	$(uv)^{(n)}=\sum\limits^n_{k=0} C^k_n u^{n-k} v^{k}$
+\end{longtable}
+
+\subsubsection{Производная сложной функции}
+\begin{longtable}[c]{@{\extracolsep{\fill}}l}
+$(f(g(x)) )' = f'(g(x))\cdot g'(x)$
+\end{longtable}
+
+\subsubsection{Производная обратной функции}
+\begin{longtable}[c]{@{\extracolsep{\fill}}l}
+$x'(y_0) = \frac{1}{y'(x_0)}=\frac{1}{y'(x(y_0)))}$
+\end{longtable}
+
+\subsubsection{Формулы для производных элементарных функций}
+\begin{longtable}[l]{@{\extracolsep{\fill}}|p{0.5\textwidth}|p{0.5\textwidth}|}
+$(C)'=0$, $C=const$ & $(e^x)'=e^x$ 
+\\
+$(x^n)' = nx^{n-1}$, $n\in \bbZ$ & $(x^a)'=ax^{a-1}$ %$x>0$
+\\
+$(a^x)'=\ln a\cdot a^x$, $a>0$ & $(\log_a x)'=\frac{\log_a e}{x}$, $x>0$, $a>0$
+\\
+$(\ln x)' = \frac{1}{x}$, $x>0$ & $(\ln |x|)' = \frac{1}{x}$, $x\ne 0$
+\\
+$(\sin x)'=\cos x$ & $(\cos x)'=-\sin x$
+\\
+$(\tg x)'= \frac{1}{\cos^2 x}$%, $x \ne \frac{\pi}{2}(2n+1),\, n\in \bbZ$ 
+& $(\ctg x)'= -\frac{1}{\sin^2 x}$ 
+\\
+$(\arcsin x)' = \frac{1}{\sqrt{1-x^2}}$ & $(\arccos x)' = -\frac{1}{\sqrt{1-x^2}}$
+\\
+$(\arctg x)' = \frac{1}{1+x^2}$ & $(\arcctg x)' = -\frac{1}{1+x^2}$
+\\
+$(\sh x)'= \ch x$ & $(\ch x)'= \sh x$
+\\
+$(\th x)'= \frac{1}{\ch^2 x}$ & $(\cth x)'= -\frac{1}{\sh^2 x}$
+\\
+$(\arsh x)'=\frac{1}{\sqrt{x^2+1}}$ & $(\arch x)'=\frac{1}{\sqrt{x^2-1}}$
+\\
+$(\arth x)'=\frac{1}{1-x^2}$ & $(\arcth x)'=-\frac{1}{x^2-1}$
+\end{longtable}
+
+\newpage
+
+\section{Ряд Тейлора (короткая версия)}
+Короткая версия в том смысле, что здесь указаны формулы как в шпаргалке для простого запоминания и без лишнего текста, как например, остаточных членов. Скорей всего этих формул хватит вам для 95\% задач с формулой Тейлора, но, конечно же, рекомендую выучить и полные версии формул в следующем параграфе.
+
+В третьей колонке указан радиус сходимости.
+
+PS. Я даже попытался расставить формулы так, чтобы знаки было проще запомнить. Например, $\sin$ расположен в одной колонке с $\arsh$ и $\arccos$, потому что $x^3/6$ в этих формулах имеет одинаковый знак.
+
+\begin{longtable}[l]{@{\extracolsep{\fill}}|p{0.45\textwidth}|p{0.45\textwidth}|p{0.015\textwidth}|}
+	\hline
+	\multicolumn{2}{@{\extracolsep{\fill}}|c|}{$e^x=1+\frac{x}{1}+\frac{x^2}{2}+\frac{x^3}{6}$}
+	&
+	$\infty$
+	\\\hline
+	$\sh x = x +\frac{x^3}{6}$		&	$\sin x = x - \frac{x^3}{6}$			&		$\infty$		\\
+	$\ch x = 1 + \frac{x^2}{2}$		&	$\cos x = 1 - \frac{x^2}{2}$			&		$\infty$		\\
+	$\th x = x - \frac{x^3}{3}$		&	$\tg x = x + \frac{x^3}{3}$				&		$\frac{\pi}{2}$	\\\hline
+	$\arcsin x = x + \frac{x^3}{6}$ &	$\arccos x= \frac{\pi}{2} - \arcsin x$ 	& 		$1$				\\
+	$\arctg x = x - \frac{x^3}{3}$	&	$\arcctg x = \frac{\pi}{2} - \arctg x$	&		$1$				\\\hline
+									&	$\arsh x = x - \frac{x^3}{6}$			&		$1$				\\
+									&	$\arth x = x + \frac{x^3}{3}$			&		$1$				\\\hline
+	$\ln(1-x)=-x-\frac{x^2}{2}-\frac{x^3}{3}$	&	$\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}$	&	$1$	\\\hline
+	\multicolumn{2}{@{\extracolsep{\fill}}|l|}{$(1+x)^{a}=1+ax+\tfrac{a(a-1)}{2}x^2+\tfrac{a(a-1)(a-2)}{6}x^3$, напр. $\tfrac{1}{1-x}=1+x+x^2+x^3$}	&	$1$				\\\hline
+\end{longtable}
+
+\section{Ряд Тейлора (полная версия)}
+
+Здесь указаны ряды Тейлора при $x \to 0$, т.е.~ряды Маклорена. В третьей колонке приведены радиусы сходимости. Для ряда $\sum\limits_{n=-\infty}^{+\infty} c_n (z-z_0)^n $ его можно определить по формуле Коши"--~Адамара:
+$$
+R = \frac{1}{\overline{\lim\limits_{n \to + \infty}} \sqrt[n]{|c_n|}}
+$$
+Более удобная, но менее универсальная формула:$$
+R = \lim\limits_{n \to + \infty} \left| \frac{c_n}{c_{n + 1}} \right|
+$$
+\newpage
+\begin{longtable}[l]{@{\extracolsep{\fill}}|p{0.41\textwidth}|p{0.52\textwidth}|p{0.02\textwidth}|}
+\hline
+$e^x=1+\frac{x}{1!}+\frac{x^2}{2!}+\frac{x^3}{3!}+o(x^3)$
+&
+$e^x=\sum\limits_{n=0}^{+\infty}\displaystyle\frac{x^n}{n!}$
+&
+$\infty$
+\\
+$\sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!}+o(x^5)$
+&
+$\sin x = \sum\limits_{n=0}^{+\infty} (-1)^{n}\displaystyle\frac{x^{2n+1}}{(2n+1)!}$
+&
+$\infty$
+\\
+$\cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!}+o(x^4)$
+&
+$\cos x  = \sum\limits_{n=0}^{+\infty} (-1)^{n}\displaystyle\frac{x^{2n}}{(2n)!}$
+&
+$\infty$
+\\
+$\tg x = x + \frac{x^3}{3}+\frac{2x^5}{15}+o(x^5)$
+&
+$\tg x  = \sum\limits_{n=0}^{+\infty} \frac{B_{2n} (-4)^n (1-4^n)}{(2n)!} x^{2n-1}$, где $B_{2n}$ "--- это числа Бернулли
+&
+$\frac{\pi}{2}$
+\\ 
+$\sh x = x +\frac{x^3}{3!}+\frac{x^5}{5!}+o(x^5)$
+&
+$\sh x =\sum\limits_{n=0}^{+\infty}\displaystyle\frac{x^{2n+1}}{(2n+1)!}$
+&
+$\infty$
+\\
+$\ch x = 1 + \frac{x^2}{2!}+\frac{x^4}{4!}+o(x^4)$
+&
+$\ch x  = \sum\limits_{n=0}^{+\infty}\displaystyle\frac{x^{2n}}{(2n)!}$
+&
+$\infty$
+\\
+$\th x = x - \frac{x^3}{3}+\frac{2x^5}{15}+o(x^5)$
+&
+$\th x  = \sum\limits_{n=0}^{+\infty} \frac{B_{2n} 4^n (4^n-1)}{(2n)!} x^{2n-1}$
+&
+$\frac{\pi}{2}$
+\\
+$\arcsin x = x + \frac{x^3}{6}+\frac{3x^5}{40}+o(x^5)$
+&
+$\arcsin x=\sum\limits_{n=0}^{+\infty} \frac{(2n)!}{4^n(n!)^2(2n + 1)}x^{2n + 1}$
+&
+$1$
+\\
+$\arccos x= \frac{\pi}{2} - \arcsin x$
+&
+$\arcctg x = \frac{\pi}{2} - \arctg x$
+&
+\\
+$\arctg x = x - \frac{x^3}{3}+\frac{x^5}{5}+o(x^5)$
+&
+$\arctg x = \sum\limits_{n=0}^{+\infty} (-1)^n\dfrac{x^{2n+1}}{2n+1}$
+&
+$1$
+\\
+$\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}+o(x^3)$
+&
+$\ln(1+x)= \sum\limits_{n=1}^{+\infty} \frac{(-1)^{n+1}}{n} x^n$
+&
+$1$
+\\
+$\ln(1-x)=-x-\frac{x^2}{2}-\frac{x^3}{3}+o(x^3)$
+&
+$\ln(1-x)= -\sum\limits_{n=1}^{+\infty} \frac{1}{n} x^n$
+&
+$1$
+\\
+$
+(1+x)^{a}=1+ax+\dfrac{a(a-1)}{2!}x^2+
+$
+&
+$(1+x)^{a}= \sum\limits_{n=0}^{+\infty} C^{n}_{a} x^n$, где
+&
+\\
+$\qquad+\dfrac{a(a-1)(a-2)}{3!}x^3+o(x^3)$
+&
+$\quad C^{n}_{a}=\frac{a(a-1)\dots(a-n+1)}{n!}$
+&
+$1$
+\\
+$\frac{1}{1-x}=1+x+x^2+x^3+o(x^3)$
+&
+$\frac{1}{1-x}= \sum\limits_{n=0}^{+\infty} x^{n}$
+&
+$1$
+\\
+$\arsh x = x - \frac{x^3}{6}+\frac{3x^5}{40}+o(x^5)$
+&
+$\arsh x = \sum\limits_{n=0}^{+\infty} \frac{(-1)^n(2n)!}{4^n (n!)^2 (2n + 1)} x^{2n + 1}$
+&
+$1$
+\\
+$\arth x = x + \frac{x^3}{3}+\frac{x^5}{5}+o(x^5)$
+&
+$\arth x = \sum\limits_{n=0}^{+\infty} \frac{1}{2n + 1} x^{2n + 1}$
+&
+$1$
+\\\hline
+\end{longtable}
+
+\subsubsection{Несколько рядов Лорана}
+\begin{longtable}[l]{@{\extracolsep{\fill}}|p{0.5\textwidth}|p{0.5\textwidth}|}\hline
+$\cth x = \frac{1}{x} + \frac{x}{3}+\frac{x^3}{45}+o(x^3)$
+&
+$\cth x  = \sum\limits_{n=0}^{+\infty} \frac{2^{2n}B_{2n}x^{2n-1}}{(2n)!}$, $0<|x|<\pi$
+\\
+$\arch x = \ln 2x - \frac{1}{4x^2}-\frac{3}{32x^4}+o\left(\frac{1}{x^{4}}\right)$ 
+&
+$\arch x = \ln 2x -\sum_{n=1}^\infty \left( \frac {(2n)!} {2^{2n}(n!)^2} \right) \frac {x^{-2n}} {(2n)}$, $|x| > 1$
+\\
+$\arcth x = =\frac{1}{x}+\frac{1}{3x^3}+\frac{1}{5x^5}+o\left(\frac{1}{x^5}\right)$
+&
+$\arcth x = \sum_{\infty}^{n=1}\frac{1}{(2n-1)x^{2n-1}}$, $x > 1$\\\hline
+\end{longtable}
+
+\section{Основные неопределенные интегралы}
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth} p{0.5\textwidth}}
+$\int x^\alpha \,dx = \frac{x^{\alpha+1}}{\alpha+1} + C$, $\alpha\neq -1$ & $ $ 
+\\ 
+$\int\frac{dx}{x+a} = \ln|x+a|+C$ & $ $ 
+\\
+$\int a^x dx = \frac{a^x}{\ln a} + C$, $a>0,$ $a\neq 1$ & $ $ 
+\\ 
+$\int \sin x\,dx =-\cos x + C$  & $\int \cos x \,dx = \sin x + C$ 
+\\
+$\int \frac{dx}{\cos^2 x} = \tg x + C$ & $\int \frac{dx}{\sin^2 x} = -\ctg x + C$ 
+\\ 
+$\int \sh x \,dx = \ch x + C$ & $\int \ch x \,dx = \sh x + C$ 
+\\ 
+$\int \frac{dx}{\ch^2 x} = \th x + C$ & $\int \frac{dx}{\sh^2 x} = -\cth x + C$ 
+\\
+\multicolumn{2}{@{\extracolsep{\fill}}l}{$\int\frac{dx}{x^2+a^2} = \frac{1}{a}\arctg\frac{x}{a} + C = -\frac{1}{a}\arctg\frac{x}{a} + C$, $a\neq 0$}
+\\
+\multicolumn{2}{@{\extracolsep{\fill}}l}{$\int\frac{dx}{x^2-a^2} = \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right| + C$, $a\neq 0$ }
+\\
+\multicolumn{2}{@{\extracolsep{\fill}}l}{$\int\frac{dx}{\sqrt{a^2-x^2}} = \arcsin\frac{x}{a} + C=-\arccos\frac{x}{a} + C$, $|x|<a$, $a\neq 0$}
+\\
+\multicolumn{2}{@{\extracolsep{\fill}}l}{$\int\frac{dx}{\sqrt{x^2+a^2}} = \ln|x+\sqrt{x^2+a^2}|+C$, $a\neq 0$}
+\\
+\multicolumn{2}{@{\extracolsep{\fill}}l}{$\int\frac{dx}{\sqrt{x^2-a^2}}= \ln|x+\sqrt{x^2-a^2}|+C$, $a\neq 0$, $|x|>|a|$}
+\end{longtable}
+
+\section{Вычисление площадей плоских фигур и длин кривых}
+
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.3\textwidth}  p{0.34\textwidth} p{0.36\textwidth}}
+$S=\int_{a}^{b}y(x)\,dx$
+& $S=\int_\alpha^\beta y(t)x'(t)\,dt$ 
+& $S=\frac{1}{2}\int_\alpha^\beta r^2(\phi)\,d\phi$
+\tabularnewline
+$l=\int_{a}^{b} \sqrt{1+y^{'2}(x)}\,dx$
+& $l=\int_\alpha^\beta \sqrt{x^{'2}(t) + y^{'2}(t) }\,dt$ 
+& $l=\int_\alpha^\beta \sqrt{r^{'2}(\phi) + r^{'2}(\phi) }\,d\phi$ 
+\end{longtable}
+
+\section{Вычисление объемов тел и площадей поверхностей}
+
+\begin{longtable}[l]{@{\extracolsep{\fill}}p{0.5\textwidth}  p{0.5\textwidth} }
+$V=\pi\int_{a}^{b} y^2(x)\,dx$
+& $V=\pm\pi\int_\alpha^\beta y^2(t)x'(t)\,dt$
+\tabularnewline
+$S=2\pi\int_{a}^{b}\abs{y(x)} \sqrt{1+y^{'2}(x)}\,dx$
+& $S=\pm2\pi\int_\alpha^\beta y(t) \sqrt{x^{'2}(t) + y^{'2}(t) }\,dt$
+\tabularnewline
+$S=2\pi\int_{\phi_1}^{\phi_2}r(\phi)\sqrt{r^2(\phi) +r^{'2}(\phi)}\sin\phi\,d\phi$
+& $S=2\pi\int_{\phi_1}^{\phi_2}r(\phi)\sqrt{r^2(\phi) +r^{'2}(\phi)}\cos\phi\,d\phi$
+\tabularnewline
+$S=2\int_{a}^{b} z(x) \sqrt{1+y^{'2}(x)}\,dx$
+& $S=\int_\alpha^\beta z(t) \sqrt{x^{'2}(t) + y^{'2}(t) }\,dt$
+\end{longtable}
+
+\section{Несобственные интегралы}
+
+\begin{longtable}[c]{ |B{0.33}{0}|B{0.33}{0}|B{0.33}{0}|}
+\hline Интеграл & Сходится при & Расходится при 
+\tabularnewline\hline $\int\limits_{1}^{+\infty} \frac{dx}{x^a}$ 
+& $\alpha > 1$
+& $\alpha \le 1$
+\tabularnewline\hline $\int\limits_{0}^{1} \frac{dx}{x^a}$
+& $\alpha < 1$
+& $\alpha \ge 1$
+\tabularnewline\hline \multirow{2}{*}{$\int\limits_{2}^{+\infty} \frac{dx}{x^a |\ln x|^{\beta}}$}
+& $\alpha > 1$, $\forall \beta$
+& $\alpha < 1$, $\forall \beta$
+\tabularnewline\cline{2-3} 
+& $\alpha = 1$, $\beta > 1$
+& $\alpha = 1$, $\beta \le 1$
+\tabularnewline\hline \multirow{2}{*}{$\int\limits_{0}^{2} \frac{dx}{x^a |\ln x|^{\beta}}$}
+& $\alpha < 1$, $\forall \beta$
+& $\alpha > 1$, $\forall \beta$
+\tabularnewline\cline{2-3} 
+& $\alpha = 1$, $\beta < 1$ & $\alpha = 1$, $\beta \ge 1$
+\tabularnewline\hline
+\end{longtable}
+
+\section{Криволинейные интегралы}
+\subsubsection{Первого рода}
+$\int\limits_{\Gamma} F(x,y,z) ds = \int\limits_{\alpha}^{\beta} F(x(t),y(t),z(t))\sqrt{(x'(t))^2+(y'(t))^2+(z'(t))^2}\,dt$
+
+$\int\limits_{\Gamma} F(x,y) ds = \int\limits_{\alpha}^{\beta} F(x,f(x))\sqrt{1+(f'(x))^2}\,dt, \quad y=f(x)$
+
+\subsubsection{Второго рода}
+$\int\limits_{\Gamma} P\,dx+Q\,dy+R\,dz=\int\limits_{\alpha}^{\beta} \left(P x'(t)+ Q y'(t)+ R z'(t)\right)\,dt$
+
+\subsubsection{Формула Грина}
+$\oint\limits_{\Gamma ^{+}} P \,dx + Q \,dy = \iint\limits_{D} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) \,dx\,dy$
+
+\section{Поверхностные интегралы}
+\subsubsection{Первого рода} 
+${ I=\iint \limits _{S}{f\left(x, y, z\right)dS }=\iint \limits _{D}{f\left(x\left(u,v\right),y\left(u,v\right),z\left(u,v\right)\right){\sqrt {EG-F^{2}}}\,du\,dv}}$
+
+${ E=\left(x_{u}'\right)^{2}+\left(y_{u}'\right)^{2}+\left(z_{u}'\right)^{2}}, \quad {F=x_{u}'\,x_{v}'+y_{u}'\,y_{v}'+z_{u}'\,z_{v}'}, \quad { G=\left(x_{v}'\right)^{2}+\left(y_{v}'\right)^{2}+\left(z_{v}'\right)^{2}}$
+
+$ I=\iint \limits _{S}{f\left(x, y, z\right)dS } = \iint \limits _{D} f(x,y) \sqrt {z_x^2 + z_y^2 + 1}dxdy, \quad z=z(x, y) $
+
+\subsubsection{Второго рода} 
+
+\qquad  \qquad  \qquad \qquad \qquad \qquad \qquad \qquad \qquad (считать как интеграл 1 рода)
+
+${\iint \limits _{S }{P\,dy\,dz+Q\,dz\,dx+R\,dx\,dy}} = {\iint \limits _{S }{((P,Q,R),n)}dS}) = \iint \limits _{S}{\det \begin{vmatrix}P&Q&R\\x_u&y_u&z_u\\x_v&y_v&z_v\end{vmatrix}}dudv$
+
+
+$n = [r_u, r_v], \quad r = r(u,v) = (x(u,v), y(u,v), z(u,v),) , \quad n = \frac{-z_x i-z_y j+k}{\sqrt{(z_x)^2 + (z_y)^2 + 1}}, \quad z = z(x,y)$
+
+
+\subsubsection{Формула Гаусса-Остроградского}
+${\iint \limits _{S^{+}}{P\,dy\,dz+Q\,dz\,dx+R\,dx\,dy}} = {\iiint \limits _{G} \left(P_x + Q_y + R_z\right)dxdydz}, \quad \iiint\limits_V\mathrm{div}\,\mathbf{F}\,dV=\int\limits_{\,\,S}\!\!\!\!\int\!\!\!\!\!\!\!\!\!\!\!\!\,\!\!\,\subset\!\!\supset\mathbf F\cdot\mathbf{n}\,dS,$
+
+\subsubsection{Формула Стокса}
+${\int \limits _{\Gamma ^{+}}{P\,dx+Q\,dy+R\,dz}} = \iint \limits _{S^{+}}{det \begin{vmatrix}\rm{cos}\alpha &\rm{cos}\beta&\rm{cos}\gamma\\ \frac {\partial}{\partial x}&\frac {\partial}{\partial y}&\frac {\partial}{\partial z}\\P&Q&R\end{vmatrix}}dudv, \quad \int \limits _{\Sigma }{\mathrm  {rot}}\,{\mathbf  {F}}\cdot d{\mathbf  {\Sigma }}=\int \limits _{{\partial \Sigma }}{\mathbf  {F}}\cdot d{\mathbf  {r}}$
+
+\section{Преобразование координат}
+
+$J = \det {\begin{pmatrix}{\pd{u_{1}}{x_{1}}}(x)&{\pd{u_{1}}{x_{2}}}(x)\\{\pd{u_{2}}{x_{1}}}(x)&{\pd{u_{2}}{x_{2}}}(x)\end{pmatrix}}$
+
+\subsubsection{Сферические координаты} 
+
+${\begin{cases}x=r\sin \theta \cos \varphi ,\\y=r\sin \theta \sin \varphi ,\\z=r\cos \theta .\end{cases}} 0 \le \theta \le \pi, \quad 0 \le \varphi \le 2\pi, \quad J=r^{2}\sin \theta $
+
+\subsubsection{Цилиндрические координаты}
+${\begin{cases}x=\rho \cos \varphi ,\\y=\rho \sin \varphi ,\\z=z.\end{cases}} \quad 0 \le \varphi \le 2\pi, \quad J = \rho$
+
+
+\section{Векторное поле}
+
+\begin{itemize}
+	\item
+	${\mathrm  {grad}}\,\varphi =\nabla \varphi ={\frac  {\partial \varphi }{\partial x}}{\vec  e}_{x}+{\frac  {\partial \varphi }{\partial y}}{\vec  e}_{y}+{\frac  {\partial \varphi }{\partial z}}{\vec  e}_{z}.$
+	
+	\item
+	$\operatorname {div}\,{\mathbf  {F}}= (\nabla , {\mathbf  {F}})= {\frac  {\partial F_{x}}{\partial x}}+{\frac  {\partial F_{y}}{\partial y}}+{\pd{F_{z}}{z}} = \lim _{{V\rightarrow 0}}{\frac{\iint \limits _{S}\!\!\!\!\!\!\!\!\!\!\subset \!\supset \,({\vec  F},d{\vec  S})}{V}}$
+	
+	\item
+	$\operatorname{rot}\, \mathbf{F} = [\mathbf{\nabla} , \mathbf{F}] = \begin{vmatrix} \mathbf{e}_x & \mathbf{e}_y & \mathbf{e}_z \\  
+	\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} 
+	\\  F_x & F_y & F_z 
+	\end{vmatrix} 
+	= \lim_{\Delta S\to 0}\frac{\oint\limits_{L}\mathbf{ a\cdot , dr}}{\Delta S}$
+	
+\end{itemize}
+
+\section{Поверхности вращения}
+
+$S=2\pi \int \limits _{a}^{b}f(x){\sqrt  {1+\left(f'(x)\right)^{2}}}dx, \quad y=f(x),\ a\leq x\leq b$ вокруг Ox
+
+$S=2\pi \int \limits _{\alpha }^{\beta }y(t){\sqrt  {\left(x'(t)\right)^{2}+\left(y'(t)\right)^{2}}}dt, \quad x=x(t),\ y=y(t),\ \alpha \leq t\leq \beta  $
+
+$S=2\pi \int \limits _{\alpha }^{\beta }\rho (\varphi )|\sin \varphi |{\sqrt  {\left(\rho (\varphi )\right)^{2}+\left(\rho '(\varphi )\right)^{2}}}d\varphi, \quad r=\rho (\varphi ),\ \alpha \leq \varphi \leq \beta $
+
+$V=\pi \int \limits _{a}^{b}f^{2}(x)dx$
+
+
+\section{Ряды Фурье}
+
+$f(x)=\frac{a_0}{2} + \sum^{\infty}_{n=1} (a_n \cos \frac{\pi n x}{l} + b_n \sin \frac{\pi n x}{l})$
+
+$a_0= \frac{1}{l}\int\limits_{-l}^{l}f(x)dx, \quad a_n= \frac{1}{l}\int\limits_{-l}^{l}f(x)\cos(nx)dx, \quad b_n= \frac{1}{l}\int\limits_{-l}^{l}f(x)\sin(nx)dx,$
+
+2n - четность относительно $\frac {\pi}{2}$ такая же, как относительно 0
+
+\subsubsection{Равенство Парсеваля} 
+$\frac {a_0^2}{2} + \sum _{{n=1}}^{\infty }(a_n^2 +b_n^2)={\frac  {1}{\pi }}\int _{{-\pi }}^{\pi }|f(x)|^{2}\,dx,$
+
+\section{Признаки Даламбера и Коши}
+
+\section{3.9изКудрявцева}
+
+\section{Криволинейные интегралы}
+\subsubsection{первого}
+$\int\limits_{\Gamma} F\, ds = \int\limits_{\alpha}^{\beta} F(x(t),y(t),z(t))\sqrt{(x'(t))^2+(y'(t))^2+(z'(t))^2}\,dt$
+\subsubsection{второго}
+$\int\limits_{\Gamma} \left(P\,dx+Q\,dy+R\,dz=\int\limits_{\alpha}^{\beta} P x'(t)+ Q y'(t)+ R z'(t)\right)\,dt$
+\subsubsection{грина}
+
+
+\section{Поверхностные интегралы}
+\subsubsection{определение}
+\subsubsection{гауссостроградский}
+\subsubsection{стокса}
+
+\section{Теория поля}
+
+\section{Все для Фурье}
+
+Прошу прощения ребята, когда-нибудь напишем)
+
+\section{Вычеты}
+\begin{itemize}
+\item 
+Формульные определения вычета регулярной функции:
+\footnotesize
+\begin{longtable}[c]{|B{0.5}{0}|B{0.5}{0}|}
+\hline
+изолированная особая точка $a\in\bbC$ & $\res_a f=\frac{1}{2\pi i} \int_{\Gamma_{\rho}^{+}} f(\xi)\, d\xi$ \tabularnewline\hline
+бесконечность $a=\infty$ &  $\res_a f=\frac{1}{2\pi i} \int_{\Gamma_{\rho}^{-}} f(\xi)\, d\xi$ \tabularnewline\hline
+\end{longtable}
+\normalsize
+\item
+Свойство, исходящее из формульных определений:
+$$
+\sum _{k=1}^{n}\mathop {\mathrm {res} } \limits _{z=a_{k}}f(z) + \mathop {\mathrm {res}} \limits _{\infty } f(z) = 0
+$$
+\end{itemize}
+
+\subsubsection{Формулы для подсчета вычета в конечной точке $a \in \bbC$.}
+\begin{itemize}
+\item
+Общая формула с использованием ряда Лорана:
+$$\res_a f = c_{-1}.$$
+\item
+Некоторые частные случаи:
+\footnotesize
+\begin{longtable}[c]{|B{0.31}{0}|B{0.38}{0}|B{0.41}{0}|}
+\hline
+Если $a\in \bbC$ "--- \ldots& Причем & Формула $\res_a f$ \tabularnewline\hline
+устранимая особая точка &  & $\res_a f=0$ \tabularnewline\hline
+полюс первого порядка &  & $\res_a f=\lim_{z\to a}{f(z)\cdot(z-a)}$ \tabularnewline\hline
+полюс первого порядка & $f=\frac{g(z)}{h(z)}$, где $g(z),\ h(z)$ "--- регулярные в точке $a$, $g(a)\neq 0,\ h(a)=0. \ h'(a)\neq 0$ & $\res_a f=\frac{g(a)}{h'(a)}$ \tabularnewline\hline
+полюс первого порядка & в примере~$\uparrow$ выше $h(z)=z-a$ , т.е. $f=\frac{g(z)}{z-a}$ & $\res_a f=g(a)$ \tabularnewline\hline
+полюс порядка $n\in\bbN$ & & $\res_a f = \frac{1}{(n-1)!}\cdot \lim\limits_{z\to a} \frac{d^{n-1}}{dz^{n-1}}\left(f(z)(z-a)^n\right)$ \tabularnewline\hline
+полюс порядка $n\in\bbN$ & $f(z)=\frac{h(z)}{(z-a)^m},$ где $h(z)$ "--- регулярная в точке $a$ & $\res_a f(z) = \frac{1}{(m-1)!} h^{(m-1)}(a),$ т.е.\footnotemark  \tabularnewline\hline
+существенно особая точка & & $\res_a f = c_{-1}$ \tabularnewline\hline
+\end{longtable}
+\end{itemize}
+\footnotetext{т.е.~вычет функции $f(z)$ в точке $a$ равен коэффициенту при $(z-a)^{m-1}$ ряда Тейлора $h(z)=\sum\limits_{n=0}^{\infty} c_n (z-a)^n$}
+\normalsize
+
+\subsubsection{Формулы для подсчета вычета в бесконечности}
+\begin{itemize}
+\item
+Общая формула с использованием ряда Лорана:
+$$\res_{\infty} f = -c_{-1}.$$
+\item
+Если $a$ "--- устранимая особая точка, то
+$$\res_{\infty} f= \lim\limits_{z\to \infty} \left( f(\infty)-f(z)\right)\cdot z,\ \text{где}\ f(\infty)=\lim\limits_{z\to \infty} f(z) .$$
+\end{itemize}
+
+\section{Формулы из комбинаторики}
+
+\subsubsection{Формулы де Моргана для множеств (законы двойственности)}
+
+\begin{longtable}[l]{l l}
+	$\overline{A \cup B} = \overline{A} \cap \overline{B};$ 
+	& $\overline{A \cap B} = \overline{A} \cup \overline{B}.$
+\end{longtable}
+
+\subsubsection{Формула включений-исключений для мощности множества}
+\begin{longtable}[l]{l}
+$\biggl | \bigcup_{i=1}^{n}A_i \biggl | = \sum_{i} | A_i | - \sum_{i<j} | A_i \cap A_j | + \ldots + (-1)^{n-1} | A_1 \cap A_2 \cap \ldots \cap A_n |.$
+\end{longtable}
+
+\subsubsection{Размещения, перестановки и сочетания}
+
+\begin{longtable}[l]{l}
+$\bullet$ $A^k_n= (n)_k = \frac{n!}{(n-k)!}=n(n-1)(n-2)\dots(n-k+1)$ "--- 
+размещения;
+\\
+$\bullet$ $P_n = A^n_n = n!$ "--- перестановки;
+\\
+$\bullet$ 
+$C^k_n=\binom{n}{k}=\frac{n!}{k!\,(n-k)!}=\frac{n(n-1)(n-2)\dots(n-k+1)}{k!}$ 
+"--- сочетания;
+\end{longtable}
+
+\subsubsection{Бином Ньютона}
+\begin{longtable}[c]{c}
+	$(a+b)^n=\sum^{k}_n \binom{n}{k} a^k b^{n-k};$
+\end{longtable}
+
+\subsubsection{Другие свойства биномиального коэффициента}
+
+\begin{longtable}[c]{ B{0.5}{0} B{0.5}{0}}
+$\binom{n}{k}=\binom{n}{n-k}; $
+&  $\binom{n+1}{k+1}=\binom{n}{k+1}+\binom{k}{n};$ 
+\tabularnewline
+$\sum^{k}_n \binom{n}{k}=2^n$ 
+& $\sum^{k}_n (-1)^k \binom{n}{k}=0.$
+\end{longtable}
+
+\subsubsection{Известная задача про шары и ящики (\href{https://www.elcamino.edu/faculty/gfry/210/DistributeBallsBoxes.pdf}{Ссылка})}
+
+Пусть у нас есть~$k$ шаров и~$n$ ящиков. Необходимо подсчитать количество способов распределить шары по ящикам с выполнением некоторых из следующих условий:
+\begin{itemize}
+\item \textit{Упорядоченность шаров.} Различимы ли шары друг от друга?
+\item \textit{Упорядоченность ящиков.} Различимы ли ящики друг от друга?
+\item \textit{Исключения ящиков (Повторения шаров).} Если мы положили шар в ящик, то далее, исключаем ли мы этот ящик из рассмотрения и больше не кладем в него мячей? Иначе говоря, при этом условии ящики могут содержать не более, чем один шар.
+\item \textit{Пустота ящиков.} Можно ли оставлять ящики пустыми?
+\end{itemize}
+Тогда после постановки условий ответы к этим задачам можно оформить в виде таблицы:
+\footnotesize
+\begin{longtable}[c]{|B{0.14}{0}|B{0.14}{0}|B{0.15}{0}|B{0.17}{0}|B{0.40}{0}|}
+\hline
+Шары & Ящики & Исключ.? & Можно пустые? &Количество размещений $k$ шаров в $n$ ящиков \tabularnewline\hline
+Разл. & Разл. & Да & Да & $\textstyle(n)_k$ \tabularnewline\hline
+Разл. & Разл. & Да & Нет & $\textstyle\begin{cases} n!, \text{ если } k=n \\ 0, \text{ если } k\ne n. \end{cases}$  \tabularnewline\hline
+Разл. & Разл. & Нет & Да & $\textstyle n^k$ \tabularnewline\hline
+Разл. & Разл. & Нет & Нет & $\textstyle\sum_{i=0}^{n-1}(-1)^{i} \binom{n}{i} (n-i)^k$ \tabularnewline\hline
+Неразл. & Разл. & Да & Да & $\textstyle\binom{n}{k}$ \tabularnewline\hline
+Неразл. & Разл. & Да & Нет & $\textstyle\begin{cases} 1, \text{ если } k=n \\ 0, \text{ если } k\ne n. \end{cases}$ \tabularnewline\hline
+Неразл. & Разл. & Нет & Да & $\textstyle\binom{n+k-1}{k}$ \tabularnewline\hline
+Неразл. & Разл. & Нет & Нет & $\textstyle\binom{k-1}{n-1}$ \tabularnewline\hline
+\end{longtable}
+\normalsize
+
+\section{Теория вероятностей}
+
+\subsubsection{Формула включений-исключений для вероятностей}
+
+\begin{longtable}[l]{l}
+	$\bbP(A_1\cup\dots\cup A_k)= \sum_{i} \bbP(A_i) - \sum_{i<j} \bbP(A_i\cap A_j)+\ldots + (-1)^{k-1}\bbP(A_1\cap\dots\cap A_k);$
+\end{longtable}
+
+\section{Арифметическая и геометрические прогрессии}
+\begin{longtable}[l]{l l}
+{\subsubfont Арифметическая прогрессия, опр.}
+&
+{\subsubfont Геометрическая прогрессия, опр.}
+\\
+{$a_1,a_2,\ldots,a_n,\dots$, где $a_{n}=a_{n-1}+d;$}
+&
+{$b_1,b_2,\ldots,b_n,\dots$, где $b_n=b_{n-1} q;$}
+\\
+{\subsubfont Общий член арифм. прогрессии}
+&
+{\subsubfont Общий член геом. прогрессии}
+\\
+$a_n=a_1+(n-1)d;$ & $b_n=b_1 q^{n-1};$
+\\
+$a_n=a_m+(n-m)d;$ & $b_n=b_m q^{n-m};$
+\\
+$a_k+a_{n-k}=a_1+a_n,\ k\in\overline{1,n}.$ & $b_kb_{n-k+1}=b_1b_n,\ k\in\overline{1,n};$
+\\
+{\subsubfont Характеристическое свойство}
+&
+{\subsubfont Характеристическое свойство}
+\\
+$a_n=\frac{a_{n-1}+a_{n+1}}{2}, n\geq 2;$ &
+$b^2_n=b_{n-1}b_{n+1}, n\geq2$;
+\\
+{\subsubfont Сумма первых $n$ членов арифм.}
+&
+{\subsubfont Сумма первых $n$ членов геом.}
+\\
+$S_n=\sum_{i=1}^{n}a_i=\frac{a_1+a_n}{2}\cdot n$; & 
+$S_n=\sum_{i=1}^{n}b_i=b_1\frac{1-q^n}{1-q}=\frac{b_n q-b_1}{q-1}, q\ne 1$
+\\
+$S_n=\frac{2a_1+d(n-1)}{2}\cdot n;$ & Если $|q|<1$, то $S=\frac{b_1}{1-q}$
+\\
+\end{longtable}
+
+\section{Суммирование и числовые неравенств}
+\subsubsection{Числовые неравенства}
+
+\begin{longtable}[l]{l}
+	1) $a^2+b^2 \ge 2ab;$ \\
+	2) Неравенства средних $\frac{a+b}{2} \ge \sqrt{ab}$ и $\frac{a_1+a_2+\ldots+a_n}{n} \ge \sqrt[n]{a_1 a_2\ldots a_n}$; \\
+	3) Неравенство Коши"--~Буняковского $\left(\sum_{i=1}^n a_i b_i\right)^2 \le \left(\sum_{i=1}^n a_i^2\right) \left(\sum_{i=1}^n b_i^2\right)$.
+\end{longtable}
+
+\section{Некоторые замечательные пределы.}
+\begin{longtable}[l]{l l l}
+первый & 
+$\lim\limits_{x\to0}\frac{\sin x}{x}=1$;
+&
+\\
+второй & 
+$\lim\limits_{x\to0} (1+x)^{\frac{1}{x}}=e$; &
+$\lim\limits_{n\to\infty}\left(1+n\right)^{\frac{1}{n}}=e$;
+\end{longtable}
+
+\section{Асимптоты графиков}
+\begin{itemize}[wide, labelindent = 0pt]
+\item
+Прямая $x=x_0$ "--- вертикальная асимптота графика $f(x)$, если $$\lim\limits_{x\to x_0-0}f(x)=\infty\ \text{или}\ \lim\limits_{x\to x_0+0}f(x)=\infty.$$ 
+\item
+Прямая $y=kx+b$ "--- наклонная асимптота графика $f(x), x\to\pm\infty$, если $$\lim\limits_{x\to\pm\infty}\frac{f(x)}{x}=k; \quad \lim\limits_{x\to\pm\infty} (f(x)-kx)=b.$$
+\item
+Прямая $y=b$ "--- горизонтальная асимптота графика $f(x), x\to\pm\infty$ (случай $k=0$), если $$ \lim\limits_{x\to\pm\infty} f(x)=b.$$
+\end{itemize}
+
+\section{Дифференциальные уравнения}
+\subsubsection {Особые точки равновесия}
+Рассматривается линейная однородная система уравнений
+\begin{equation}\label{formulasDE}
+\begin{cases}
+\dot x = a x + b y;\\
+\dot y = c x + d y,
+\end{cases}
+\end{equation}
+где $a,b,c,d\in\bbR$. Введем матрицу $A=\big(\begin{smallmatrix}
+	a & b\\
+	c & d
+\end{smallmatrix}\big)$.
+\begin{enumerate}[wide]
+\item
+\textit{Узел}: Числа $\lambda _1, \lambda _2$ вещественны, различны, одного знака и отличны от нуля (т.е. произведение $\lambda_1\lambda_2>0$) "--- на графике траектории, сходные с дугами парабол, которые касаются прямой, соответствующей собственному вектору с меньшим модулем |$\lambda$|. 
+
+\item Дикритический (или звездный) узел: $\lambda _1 = \lambda _2$ и существует базис из собственных векторов  
+
+\item Вырожденный узел: $\lambda _1 = \lambda _2$ (кратность 1)
+
+
+\item
+Седло: действительные $\lambda _1, \lambda _2$ разного знака: $\lambda_1<0<\lambda_2$ "--- на графике траектории, сходные с дугами гипербол.
+
+сепаратрисы 
+
+\item 
+\item Комплексные $\lambda_1,\lambda_2\in\bbC$, $\lambda_{1,2} = \alpha\pm i\beta$, $\beta$
+
+\item
+Фокус: $\rm{Re}\lambda _1 = \rm{Re}\lambda _2 \ne 0$ 
+
+\item
+Центр: $\rm{Re}\lambda _1 = \rm{Re}\lambda _2 = 0$ 
+\end{enumerate}
+
+При отрицательных значениях собственных чисел узел является \textit{устойчивым} положением равновесия и поэтому происходит движение траекторий к точке равновесия, а при положительных значениях собственных чисел узел является \textit{неустойчивым} и наблюдается движение от точки равновесия. Выделяют несколько типов узлов:
+
+В таком случае положения равновесия системы \ref{formulasDE} являются корнями системы $A$
+ 
+\section{Некоторые дискретные распределения}
+\footnotesize
+\begin{longtable}[l]{|A{0.20}{0}|B{0.33}{0}|A{0.23}{0}|B{0.1}{0}|B{0.14}{0}|}
+\hline
+Распределение & Формула & Параметры & $\bbE$ & $\bbD$\tabularnewline\hline
+Вырожденное & $P(\xi=a) = 1$ & $a=const$ & $a$ & $0$\tabularnewline\hline
+Биномиальное & $P(\xi=k) = C^{k}_{n} p^k (1-p)^{n-k}$ & $n\in\bbN$, $0\le p\le 1$, $k\in\{0\}\cup\bbN$ & $np$ & $np(1-p)$ 
+\tabularnewline\hline
+Пуассона & $P(\xi=k) = \frac{\lambda^k}{k!} e^{-\lambda} $ & $\lambda>0$, $k\in\{0\}\cup\bbN$ & $\lambda$ & $\lambda$
+\tabularnewline\hline
+Геометрическое & $P(\xi=k) = p(1-p)^k$ & $0<p\le1$, $k\in\{0\}\cup\bbN$ & $\frac{1-p}{p}$ & $\frac{1-p}{p^2}$
+\tabularnewline\hline
+\end{longtable}
+
+\section{Некоторые абсолютно непрерывные распределения}
+\footnotesize
+\begin{longtable}[l]{|A{0.20}{0}|B{0.41}{0}|A{0.16}{0}|B{0.10}{0}|B{0.13}{0}|}
+\hline
+Распределение & Формула & Параметры & $\bbE$ & $\bbD$\tabularnewline\hline
+Равномерное на отрезке $[a;b]$ & 
+$p(x) = 
+\begin{cases}
+\frac{1}{b-a}, x\in [a;b]; \\ 
+0, x\notin [a;b].
+\end{cases}$ & $a<b$, $a,b\in\bbR$ & $\frac{a+b}{2}$ & $\frac{(b-a)^2}{12}$
+\tabularnewline\hline
+Нормальное (или гауссовское) & $p(x) = \frac{1}{\sigma \sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$, $x\in\bbR$
+& $\mu\in\bbR$, $\sigma\in(0;+\infty)$ & $\mu$ & $\sigma^2$
+\tabularnewline\hline
+Показательное & $p(x) = 
+\begin{cases}
+\lambda e^{-\lambda x}, x>0;\\
+0, x\le 0.
+\end{cases}$ 
+& $\lambda > 0$ & $\lambda^{-1}$ & $\lambda^{-2}$ 
+\tabularnewline\hline
+Гамма-распределение & $p(x) = 
+\begin{cases}\frac{\lambda^\alpha x^{\alpha-1}}{\Gamma(\alpha)}e^{-\lambda x}, x > 0;\\
+0, x \le 0
+\end{cases}$ (здесь $\Gamma(\alpha)$ "--- гамма-функция, $\Gamma (\alpha) = \int_{0}^{+\infty} x^{\alpha-1}e^{-x}\,dx$) & $\lambda > 0$, $\alpha > 0$ & $\frac{\alpha}{\lambda}$ & $\frac{\alpha}{\lambda^2}$
+\tabularnewline\hline
+Коши & $p(x) = \frac{1}{\pi}\cdot\frac{b}{1+b^2x^2}$, $x\in\bbR$ & $b > 0$ & не сущ. & $+\infty$
+\tabularnewline\hline
+\end{longtable}
+
+
+\section{Квадратное уравнение}
+
+Квадратное уравнение "--~ алгебраическое уравнение общего вида $ax^2+bx^2+c = 0$, $a\ne 0$. \textit{Приведённым} называют квадратное уравнение вида $x^2+px+q=0$, т.е.~в котором старший коэффициент равен единице (можно получить делением всего выражения квадратного уравнения на $a$: $p=\frac{b}{a}$, $p=\frac{c}{a}$). Некоторые свойства квадратных уравнений:
+
+\begin{itemize}
+\item
+Дискриминант $D$ квадратного уравнения равен 
+$$D = b^2-4ac.$$
+\item
+Корни уравнения: 
+$$x_{1,2} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}.$$
+\item
+Если $b$ является четным числом $b=2k$, то удобнее пользоваться четвертью дискриминанта. Тогда корни могут быть найдены по формуле:
+$$x_{1,2} = \frac{-k\pm\sqrt{k^2-ac}}{a},$$
+что принимает еще более приятный вид в случае приведенного уравнения $a=1$: $x_{1,2}=-k\pm\sqrt{k^2-c}$
+\item
+\textbf{Теорема Виета.} Для приведенного квадратного уравнения $x^2+px+q=0$ и для общего квадратного уравнения соответственно выполняется
+$$
+\begin{cases}
+x_1+x_2 = -p;\\
+x_1\cdot x_2 = q
+\end{cases}\qquad\begin{cases}
+x_1+x_2 = -\frac{b}{a};\\
+x_1\cdot x_2 = \frac{c}{a}.
+\end{cases}
+$$
+\item
+Если известны оба корня квадратного трехчлена, его можно разложить по формуле:
+$$
+ax^2+bx+c = a(x-x_1)(x-x_2).
+$$
+\end{itemize}
+
+
+
+
+\section{Выпуклые функции, определение и неравенство Йенсена}
+\footnotesize
+\begin{longtable}[c]{|B{0.25}{0}|B{0.5}{0}|B{0.16}{0}|B{0.09}{0}|}
+\hline
+выпуклая\\(выпуклая вниз)\\convex\\(convex down, \textbf{concave}  \textbf{U}p)& 
+$f(\alpha x + (1-\alpha)y) \leq \alpha f(x)+(1-\alpha)f(y)$, $0\leq\alpha\leq1$  & 
+$f''(x)\geq0$ & 
+$x^2$ 
+\tabularnewline\hline
+вогнутая\\(выпуклая вверх)\\concave\\(convex up, \textbf{concave} dow\textbf{n})&  
+$f(\alpha x + (1-\alpha)y) \geq \alpha f(x)+(1-\alpha)f(y)$, $0\leq\alpha\leq1$ &
+$f''(x)\leq0$ 
+& $-x^2$
+\tabularnewline\hline
+\end{longtable}
+\normalsize
+
+\section[Площади различных фигур]{Площади различных фигур}
+\scriptsize
+\begin{longtable}[l]{|A{0.21}{0}|B{0.34}{0}|A{0.45}{0}|}
+\hline
+Фигура & Формула & Переменные 
+\endfirsthead\hline
+Фигура & Формула & Переменные 
+\endhead\hline
+\multicolumn{3}{|c|}{Многоугольники}\tabularnewline
+\hline
+Правильный треугольник & $a^2\frac{\sqrt{3}}{4}$ & $a$ "--- длина стороны треугольника \tabularnewline\hline
+Прямоугольный треугольник & $\frac{ab}{2}$ & $a$ и $b$ "--- катеты треугольника 
+\tabularnewline\hline
+\multirow{8}{2.5cm}{Произвольный треугольник} & $\frac{1}{2}ah$
+&
+$a$ "--- сторона треугольника, $h$ "--- высота, проведённая к этой стороне 
+\tabularnewline\cline{2-3}
+& $\frac{1}{2}ab\sin\alpha$ & $a$ и $b$ "--- любые две стороны, $\alpha$ "--- угол между ними
+\tabularnewline\cline{2-3}
+&$\sqrt{p(p-a)(p-b)(p-c)}$ \newline (формула Герона) &  $a$, $b$ и $c$ "--- стороны треугольника, $p$ "--- полупериметр $\left(p=\frac{a+b+c}{2}\right)$;
+\tabularnewline\cline{2-3}
+&$|\frac{1}{2}\begin{vmatrix}x_0&y_0&1\\[-5pt]x_1&y_1&1\\[-5pt]x_2&y_2&1\end{vmatrix}|$ & $(x_0;y_0)$, $(x_1;y_1)$, $(x_2;y_2)$ "--- координаты вершин треугольника (обратите внимание на знак модуля).
+\tabularnewline\hline
+Квадрат & $a^2$ & $a$ "--- длина стороны квадрата 
+\tabularnewline\hline
+Прямоугольник & $ab$ & $a$ и $b$ "--- длины сторон прямоугольника (его длина и ширина) 
+\tabularnewline\hline
+Ромб & $\frac{1}{2}cd$ &  $c$ и $d$ "--- длины диагоналей ромба 
+\tabularnewline\hline
+Параллелограмм & $ah$ или $ab\sin\alpha$ & $a$ и $h$ "--- длины стороны и опущенной на неё высоты соответственно, $b$ "--- соседняя к $a$ сторона, $\alpha$ "--- угол между ними
+\tabularnewline\hline
+Трапеция &  $\frac{1}{2}(a+b)h$ & $a$ и $b$ "--- основания трапеции, $h$ "--- высота трапеции 
+\tabularnewline\hline
+Произвольный четырёхугольник &  $\sqrt{(p-a)(p-b)(p-c)\cdot}$\newline$\overline{\cdot(p-d)-abcd\cos\alpha}$ \newline (формула Брахмагупты) & $a$, $b$, $c$, $d$ "--- стороны четырёхугольника, $p$ "--- его полупериметр, $\alpha$ "--- полусумма противолежащих углов четырёхугольника 
+\tabularnewline\hline
+Правильный шестиугольник & $a^2\frac{3\sqrt{3}}{2}$ & $a$ "--- длина стороны шестиугольника
+\tabularnewline\hline
+Правильный восьмиугольник & $2a^2(1+\sqrt{2})$ & $a$ "--- длина стороны восьмиугольника
+\tabularnewline\hline
+Правильный многоугольник & $\frac{P^2/n}{4\operatorname{tg}(\pi/n)}$ & $P$ "--- периметр, $n$ "--- количество сторон
+\tabularnewline\hline
+Произвольный многоугольник & $\frac{1}{2}\left|\sum^{n}_{i=1}(x_{i+1}-x_i)(y_{i+1}+y_i)\right|$ (метод трапеций) & $(x_i;y_i)$ "--- координаты вершин многоугольника в порядке их обхода, замыкая последнюю с первой: $(x_{n+1};y_{n+1})=(x_1;y_1)$; при наличии отверстий направление их обхода противоположно обходу внешней границы многоугольника
+\tabularnewline\hline
+\multicolumn{3}{|c|}{Площади круга, его частей, описанных и вписанных в круг фигур}\tabularnewline\hline
+Круг &  $\pi r^2$ или $\frac{\pi d^2}{4}$ & $r$ "--- радиус, $d$ "--- диаметр круга
+\tabularnewline\hline
+Сектор круга & $\frac{\alpha r^2}{2}$ & $r$ "--- радиус круга, $\alpha$ "--- центральный угол сектора (в радианах)
+\tabularnewline\hline
+Сегмент круга & $\frac{r^2}{2}(\alpha-\sin\alpha)$ & $r$ "--- радиус круга, $\alpha$ "--- центральный угол сегмента (в радианах)
+\tabularnewline\hline
+Эллипс & $\pi ab$ & $a$, $b$ "--- большая и малая полуоси эллипса
+\tabularnewline\hline
+Треугольник, вписанный в окружность & $\frac{abc}{4R}$ & $a$, $b$ и $c$ "--- стороны треугольника, $R$ "--- радиус описанной окружности
+\tabularnewline\hline
+Четырёхугольник, вписанный в окружность & $\sqrt{(p-a)(p-b)(p-c)(p-d)}$ \newline(формула Брахмагупты) & $a$, $b$, $c$, $d$ "--- стороны четырёхугольника, $p$ "--- его полупериметр
+\tabularnewline\hline
+Многоугольник, описанный около окружности & $\frac{1}{2}Pr$ & $r$ "--- радиус окружности, вписанной в многоугольник, $P$ "--- периметр многоугольника
+\tabularnewline\hline
+Прямоугольная трапеция, описанная около окружности & $ab$ & $a$, $b$ "--- основания трапеции
+\tabularnewline\hline
+\multicolumn{3}{|c|}{Площади поверхностей тел в пространстве}\tabularnewline \hline
+Полная поверхность цилиндра & $2\pi r(r+h)$ & $r$ и $h$ "--- радиус и высота соответственно
+\tabularnewline\hline
+Боковая поверхность цилиндра & $2\pi rh$ & $r$ и $h$ "--- радиус и высота соответственно
+\tabularnewline\hline
+Полная поверхность конуса & $\pi r (l + r)$ & $r$ и $l$ "--- радиус и образующая боковой поверхности соответственно
+\tabularnewline\hline
+Боковая поверхность конуса & $\pi rl$ & $r$ и $l$ "--- радиус и образующая боковой поверхности соответственно
+\tabularnewline\hline
+Поверхность сферы (шара) & $4\pi r^2$ или $\pi d^2$ & $r$ и $d$ "--- радиус и диаметр соответственно
+\tabularnewline\hline
+\end{longtable}
+
+%%%AFTER FORMULAS COMMANDS
+\footnotesize
+\setlength{\parindent}{0.6cm}

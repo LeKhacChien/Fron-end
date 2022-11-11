@@ -1,0 +1,110 @@
+\font\Large=cmr10 at 20pt
+\def\fudge#1{\smash{\hbox{\Large#1}}}
+\chapter{Линейное отображение конечномерных линейных пространств, его матрица. Сюръективное и инъективное отображения. Ядро и образ линейного отображения.}
+
+\section{Линейное отображение конечномерных линейных пространств, его матрица}
+Пусть $L_1$ и $L_2$ "--- линейные пространства над одним  и тем же полем~$K$.
+\begin{defn}
+Отображение $\phi\colon L_1\rightarrow L_2$ называется \textit{линейным отображением}, если
+\begin{enumerate}
+\item $\forall x_1,x_2 \in L_1 \hookrightarrow \phi(x_1+x_2)=\phi(x_1)+\phi(x_2)$
+\item $\forall x \in L_1,\ \forall \lambda \in K \hookrightarrow \phi(\lambda x)=\lambda \phi(x)$
+\end{enumerate}
+\end{defn}
+В частности, из определения следует, что
+\begin{gather}\label{ch22:eq:eq1}
+\phi(0_{L_1}) =0_{L_2};\\
+\forall x_1,x_2\in L_1,\ \forall\lambda_1,\lambda_2\in K \hookrightarrow \phi(\lambda_1 x_1 + \lambda_2 x_2) = \lambda_1 \phi(x_1) + \lambda_2 \phi(x_2).
+\end{gather}
+\begin{defn}
+\textit{Образ} отображения "--- это множество 
+\begin{equation}
+\Im\phi=\phi(L_1)=\{y\in L_2\,\big|\, \exists x\in L_1: \phi(x)=y\}
+\end{equation}
+\end{defn}
+\begin{defn}
+\textit{Ядро} отображения "--- это множество 
+\begin{equation}
+\Ker\phi=\{x\in L_1\,\big|\, \phi(x)=0_{L_2}\}
+\end{equation}
+\end{defn}
+\begin{defn}
+Отображение $\phi\colon L_1\rightarrow L_2$ называется \textit{инъективным}, если никакие два различных вектора из $L_1$ не имеют одинаковых образов:
+\begin{equation}\label{22.1.inject}
+\forall x_1,x_2 \in L_1\cquad \phi(x_1)=\phi(x_2) \hookrightarrow x_1=x_2
+\end{equation}
+\end{defn}  
+\begin{defn}
+Отображение $\phi\colon L_1\rightarrow L_2$ называется \textit{сюръективным}, если любой элемент $L_2$ имеет прообраз в $L_1$:
+\begin{equation}\label{22.1.surject}
+\forall y \in L_2 \quad \exists x \in L_1\cquad \phi(x)=y \Leftrightarrow \Im \phi = L_2
+\end{equation}
+\end{defn}  
+
+\begin{stt} 
+\begin{enumerate}
+\item $\Ker\phi$ "--- линейное подпространство пространства~$L_1$; 
+\item $\Im\phi$ "--- линейное подпространство пространства~$L_2$.
+\end{enumerate}
+\end{stt}
+\begin{thm}
+Линейное преобразование $\phi$ инъективно $\Leftrightarrow \Ker\phi=\{0\}$
+\end{thm}
+\begin{proof} $ $
+\linebreak\vspace*{-\baselineskip}
+\begin{itemize}
+\item[\underline{$\Longrightarrow:$}] Пусть $\phi$ инъективно, т.е.~выполняется~\eqref{22.1.inject}. Если $x_0\in \Ker\phi$, то для него будет справедливо $\phi(x_0)=O_{L_2}$, но вспомним свойство линейного отображения~\eqref{ch22:eq:eq1}: $\phi(0_{L_1})=0_{L_2}$. Таким образом, имеем $\phi(x_0)=\phi(0_{L_1})=0_{L_2}$. Следовательно, из инъективности отображения получаем $x_0=O_{L_1}$. А значит только $O_{L_1}$ может принадлежать $\Ker\phi$, поэтому $\Ker\phi = \{0_{L_1}\}$.
+
+\item[\underline{$\Longleftarrow:$}] 
+Пусть $\Ker\phi=\{0_{L_1}\}$. Если $\phi(x_1)=\phi(x_2)$, то в силу линейности $\phi(x_1)-\phi(x_2)=\phi(x_1-x_2)=0$. Поскольку $\Ker\phi=\{0_{L_1}\}$, то $x_1-x_2=0$. Таким образом, выполняется условие~\eqref{22.1.inject}.
+\end{itemize}
+\vspace{-1.65\baselineskip}
+\end{proof}
+
+\begin{defn}
+Линейное отображение $\phi: L\rightarrow L$, отображающее пространство $L$ в себя, называется \textit{линейным преобразованием}.
+\end{defn}
+
+Напомним, говорят, что \textit{размерность} линейного пространства $\dim L = n$, если в нём существует базис из $n$ векторов.
+
+Рассмотрим запись преобразования $\phi$  в базисах. Пусть $\dim L_1 = n$, $e=\norm{e_1 \ldots e_n}$ "--- базис в $L_1$; $\dim L_2 = m$, $f=\norm{f_1 \ldots f_m}$ "--- базис в $L_2$.
+\begin{equation*}
+\forall x \in L_1 \hookrightarrow x=\sum_{j=1}^n x_je_j \Rightarrow \phi(x)\xlongequal{linear}\sum_{j=1}^n x_j\phi(e_j) 
+\end{equation*}
+\begin{equation*}
+\phi(e_j) \in L_2 \Rightarrow \phi(e_j)=\sum_{i=1}^m a_{ij}f_i \Rightarrow 
+\end{equation*}
+\begin{equation*}
+\Rightarrow \phi(x)=\sum_{j=1}^n\sum_{i=1}^m x_ja_{ij}f_i = \sum_{i=1}^m(\sum_{j=1}^n x_ja_{ij})f_i = \sum_{i=1}^m y_if_i
+\end{equation*}
+Отсюда и из единственности разложения по базису получаем закон преобразования координат:
+\begin{equation}
+y_i=\sum_{j=1}^n a_{ij}x_j, i=\overline{1,m} \Leftrightarrow Y_f^\uparrow=A_{\phi,e,f}X_e^\uparrow,
+\end{equation}
+где через $X_e^\uparrow$, или, сокращённо, $X$ обозначаются столбцы координат $\begin{Vmatrix}
+x_1 \\ x_2 \\ \vdots \\ x_n
+\end{Vmatrix}$ при разложении элемента $x$ по базису $e$: $x=e X_e^\uparrow$
+\begin{defn}
+Матрица $A_{\phi,e,f}=(a_{ij})_{\substack{ 1\le i\le m \\ 1\le j\le n }}=\norm{\phi(e_1)^\uparrow \ldots \phi(e_n)^\uparrow}$, состоящая из столбцов координат образов базисных элементов $e_j$ в разложении по базисным элементам $f_i$, называется \textit{матрицей линейного отображения} $\phi$ в паре базисов $e$ и $f$.
+\end{defn}
+\begin{stt}\label{22.1.KerIm} {О вычислении образа и ядра преобразования с помощью его матрицы} $ $\\
+1) $x \in \Ker\phi \Leftrightarrow A_\phi X^\uparrow=0^\uparrow$ \\
+2) $\Im\phi=\langle\phi(e_1) \ldots \phi(e_n)\rangle=\langle a_1^\uparrow \ldots a_n^\uparrow\rangle$, где $a_j^\uparrow$ "--- столбцы матрицы $A_\phi$, а $\langle a_1^\uparrow \ldots a_n^\uparrow\rangle$ "--- \textit{линейная оболочка}, то есть множество всех линейных комбинаций $\lambda_1 a_1^\uparrow + \ldots + \lambda_n a_n^\uparrow, \lambda_1\ldots\lambda_n \in \bbR$.
+\end{stt}
+\begin{thm}
+Пусть дано линейное отображение $\phi:L_1\rightarrow L_2$. Тогда $\dim L_1=\dim\Ker\phi+\dim\Im\phi$.
+\end{thm}
+\begin{proof}
+Из пункта 1) утверждения~\ref{22.1.KerIm} и теоремы~\ref{21.2.th.common} главы~\textnumero\ref{chapter21} следует, что размерность ядра преобразования равна количеству параметрических неизвестных, то есть $n-\rg A_\phi$, а его базис в координатной записи имеет вид фундаментальной системы решений уравнения $A_\phi X^\uparrow=0^\uparrow$.
+Из пункта 2) того же утверждения следует, что $\dim\Im\phi=\rg A_\phi$.
+\end{proof}    
+\begin{notion}
+Из доказанного, однако, не следует, что для любого преобразования $\phi$ пространства $L_2$ пространство разложимо в сумму ядра и образа преобразования.
+\end{notion}
+\begin{exmpl} $ $ \\
+1) Для преобразования двумерного пространства с матрицей $A_\phi=\begin{pmatrix}
+0 && 1 \\ 0 && 0
+\end{pmatrix} \\
+\Ker\phi=\Im\phi=\langle e_1\rangle, \Ker\phi+\Im\phi=\langle e_1\rangle \neq L = \langle e_1, e_2\rangle$  \\
+2) В пространстве многочленов $P^{(n)}(x)$ степени не выше $n$ преобразование $\phi=\dfrac{d}{dx}$ будет линейным с $\Ker\phi=P^{(0)}(x)$ и $\Im\phi=P^{(n-1)}(x)$
+\end{exmpl}

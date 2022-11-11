@@ -1,0 +1,21 @@
+\documentclass[a5paper,openany,9pt]{extbook}
+\input{structure}
+\include{include/header}
+\include{include/macros}
+\begin{document}
+%\frontmatter
+\include{frontmatter/titlepageTMB}
+\tableofcontents
+\include{frontmatter/litra}
+\include{frontmatter/foreword}
+\include{frontmatter/aboutGOS}
+\include{frontmatter/notations}
+\include{frontmatter/epigraph}
+%\mainmatter
+\foreach \n in {1,...,38}{\include{chapters/chapter\n}}
+\appendix
+\include{appendix/formulas}
+\printindex
+%\backmatter
+\include{backmatter/theend}
+\end{document}

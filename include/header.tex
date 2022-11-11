@@ -1,0 +1,126 @@
+\usepackage{indentfirst} 
+\usepackage{amsmath,amssymb,amscd,amsthm} 				
+
+\usepackage{blkarray}		
+\usepackage{multicol}
+\usepackage{multirow}		
+%\usepackage{hhline}
+\usepackage{array}
+\usepackage{ragged2e}
+
+\usepackage{longtable}
+%To remove the whitespace before and after a longtable, you may change the lengths; Their default value is \bigskipamount
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0.5\bigskipamount}
+%to help to set longtable to fit the page-width
+\setlength\LTcapwidth{\textwidth} % default: 4in (rather less than \textwidth...)
+\setlength\LTleft{0pt}            % default: \parindent
+\setlength\LTright{0pt}           % default: \fill
+
+\newcolumntype{A}[2]{% vertical alignment in longtable with certain width of column
+    >{\minipage{\dimexpr#1\linewidth-2\tabcolsep-#2\arrayrulewidth\relax}\vspace\tabcolsep}%
+    c<{\RaggedRight\vspace\tabcolsep\endminipage}}
+
+\newcolumntype{B}[2]{%
+    >{\minipage{\dimexpr#1\linewidth-2\tabcolsep-#2\arrayrulewidth\relax}\vspace\tabcolsep}%
+    c<{\centering\vspace\tabcolsep\endminipage}}
+
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{emptypage}
+
+\usepackage{epigraph}
+
+% https://tex.stackexchange.com/questions/96650/width-of-epigraphs
+\let\originalepigraph\epigraph 
+\renewcommand\epigraph[2]%
+   {\setlength{\epigraphwidth}{\widthof{\itshape\epigraphsize#1}}\originalepigraph{\itshape\epigraphsize#1}{\scshape\hfill#2}}
+
+\usepackage[e]{esvect}		
+
+\usepackage{datetime}
+
+%for correct accents above symbols
+\usepackage{accents}%Note it is by default in scriptscriptstyle. Force correct font by yourself.
+     
+\usepackage{forloop}
+
+% \usepackage{pgffor}
+
+\newcommand{\boxtitle}[2]
+{\setlength\fboxsep{0pt}%
+\noindent\colorbox{prpl!20}{\strut\parbox[c][.6cm]{\ecart}{\color{prpl!70}\Large\sffamily\bfseries\centering#1}}\hskip\esp\colorbox{prpl!40}{\strut\parbox[c][.6cm]{\linewidth-\ecart-\esp}{\Large\sffamily\centering\bfseries#2}}}
+
+\input{include/wrapping}
+
+\usepackage[nobottomtitles*]{titlesec}%nobottomtitles*, but very strange behaviour with footnotes 
+\renewcommand{\thesection}{\textsection\arabic{chapter}.\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+\addto\captionsrussian{\renewcommand{\chaptername}{Глава~\textnumero}}
+
+% page settings 
+\setlength{\parindent}{0.6cm}
+
+% front page
+\author{Диденко Андрей}
+\title{Подготовка к ГОСу по МатАнализу
+\thanks{Спасибо всем за поддержку в написании этого документа}
+\date{10 Апреля 2016}}
+
+% for the last page
+\usepackage{wallpaper}
+
+% other settings
+\pdfcompresslevel=9
+\pdfobjcompresslevel=9
+
+\usepackage{extarrows}
+\usepackage{rmathbr}
+
+\usepackage{embrac} % upright brackets in emphasized text
+
+\usepackage[style=russian]{csquotes}
+
+%\usepackage{todonotes}
+%\presetkeys{todonotes}{inline, color=prpl}{}
+
+\usepackage{hyperref}	
+\hypersetup{
+  breaklinks,unicode,bookmarksopen,bookmarksnumbered,hidelinks,
+  pdftoolbar            = false,        
+  pdfmenubar            = false,        
+  pdftitle              = {\texorpdfstring{GOS-Book}{GOS-Book}},
+  pdfauthor             = {Didenko Andre},
+  pdfsubject            = {GOS-Book},
+  pdfstartview          = {FitV},
+  pdfborder             = {0 0 0},
+  bookmarksopenlevel    = 2,
+}
+
+% make all href have purple italics font
+\let\oldhref\href
+\renewcommand{\href}[3][prpl]{\oldhref{#2}{\textit{\textcolor{#1}{#3}}}}
+
+\usepackage{bookmark}
+\bookmarksetup{
+open,numbered,addtohook={%
+\ifnum\bookmarkget{level}=0 % chapter
+\bookmarksetup{bold}%
+\fi
+\ifnum\bookmarkget{level}=-1 % part
+\bookmarksetup{color=prpl,bold}%
+\fi
+}}
+
+%VARIABLES
+\newlength{\iconwidth}
+\setlength{\iconwidth}{0.35cm}
+
+
+%Situational commands for special stuff
+
+%\includeonly{frontmatter/titlepageTMB} %compile only this file.
+%\usepackage{showkeys} %show names of labels and references
+%\geometry{showframe} % show geometry frame box
+%\usepackage[1]{pagesel} %compile only first page
